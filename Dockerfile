@@ -4,7 +4,8 @@ RUN apk add --no-cache \
 		ca-certificates \
 		openssl \
 		zip \
-		git
+		git \
+		gawk
 
 RUN pip install awscli boto3 \
   && mkdir ~/.aws \
